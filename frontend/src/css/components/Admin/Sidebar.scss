@@ -1,0 +1,17 @@
+#sidebar {
+  padding: 20px;
+  background-color: #f6f9fa;
+  width: 250px;
+  height: 100vh;
+  .item div {
+    background-color: #edeff1;
+    padding: 10px;
+  }
+  .item-active {
+    color: #ffffff;
+    div {
+      background-color: #10b3d6;
+      padding: 10px;
+    }
+  }
+}

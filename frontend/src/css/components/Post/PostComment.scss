@@ -1,0 +1,33 @@
+#comment-form {
+  form {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    margin-top: 35px;
+    input {
+      width: 95%;
+      border: 0 solid transparent;
+      box-shadow: none;
+      height: 65px;
+      padding-left: 30px;
+      font-size: 14px;
+      border-radius: 4px;
+      outline: none;
+      border: 1px solid #10b3d6;
+    }
+
+    button {
+      margin-left: -5px;
+      padding: 5px 25px;
+      font-size: 20px;
+      background: #10b3d6;
+      color: #fff;
+      text-align: center;
+      border: 0;
+      border-radius: 4px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      transition: all 0.4s linear;
+    }
+  }
+}
