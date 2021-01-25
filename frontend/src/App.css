@@ -1,0 +1,17 @@
+.header {
+  background-image: linear-gradient(60deg, #10b3d6 0%, #1d2746 100%);
+}
+a {
+  text-decoration: none;
+}
+.link {
+  color: #1d2746;
+}
+.link:hover {
+  color: #10b3d6;
+}
+@media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 19px !important;
+  }
+}
