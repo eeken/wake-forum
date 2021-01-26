@@ -26,7 +26,7 @@ function User() {
         id: user.id,
       }),
       headers: {
-        id: "jajajj", 
+        id: "jajajj", //cahnge this
         "Content-Type": "application/json",
       },
     }).then((res) =>

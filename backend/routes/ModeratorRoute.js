@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { v4 } = require("uuid");
-const db = require("../database");
+const db = require("../databse");
 
 router.post("/", (req, res) => {
   const { useranme, pwd } = req.body;

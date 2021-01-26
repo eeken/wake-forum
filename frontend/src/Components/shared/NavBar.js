@@ -22,7 +22,7 @@ function NavBar() {
     <>
       <CreatePost />
       <div id="nav-bar-conatiner">
-        <h1 id="logo">Wake Up Forum</h1>
+        <h1 id="logo">Forum</h1>
         <ul id="nav">
           <NavLink
             className="nav-item"
@@ -50,18 +50,11 @@ function NavBar() {
               Create Post
             </li>
           ) : (
-              <div>
             <NavLink to="/register">
-              <div className="nav-item nav-button" id="register">
+              <li className="nav-item nav-button" id="register">
                 Register
-              </div>
+              </li>
             </NavLink>
-            <NavLink to="/login">
-              <div className="nav-item nav-button" id="register">
-                Login
-              </div>
-            </NavLink>
-                </div>
           )}
           {user ? (
             <div

@@ -2,7 +2,7 @@ const router = require("express").Router();
 require("dotenv/config");
 const { v4 } = require("uuid");
 const jwt = require("jsonwebtoken");
-const db = require("../database");
+const db = require("../databse");
 const postValidation = require("../validators/postValidator");
 const getUserInfoFromToken = require("../helpers/getUserInfoFromToken");
 

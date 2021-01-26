@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const getUserInfoFromToken = require("../helpers/getUserInfoFromToken");
-const db = require("../database");
+const db = require("../databse");
 const { v4 } = require("uuid");
 
 router.post("/", async (req, res) => {

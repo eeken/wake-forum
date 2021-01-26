@@ -3,7 +3,7 @@ const registerValidation = require("../validators/registerValidator");
 require("dotenv/config");
 const { v4 } = require("uuid");
 const jwt = require("jsonwebtoken");
-const db = require("../database");
+const db = require("../databse");
 const { route } = require("./postCommentRoute");
 
 //Register Route

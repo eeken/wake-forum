@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const db = require("./database");
+const db = require("./databse");
 
 const app = express();
 
@@ -21,7 +21,7 @@ app.use("/post", postRoute);
 app.use("/comment", postCommentRoute);
 app.use("/moderator", ModeratorRoute);
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8001;
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
