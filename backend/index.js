@@ -21,7 +21,7 @@ app.use("/post", postRoute);
 app.use("/comment", postCommentRoute);
 app.use("/moderator", ModeratorRoute);
 
-const PORT = process.env.PORT || 8001;
+const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
