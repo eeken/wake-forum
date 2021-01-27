@@ -10,6 +10,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 
+
+
 // importng Routes
 const userRoute = require("./routes/userRoute");
 const postRoute = require("./routes/postRoute");
@@ -21,8 +23,12 @@ app.use("/post", postRoute);
 app.use("/comment", postCommentRoute);
 app.use("/moderator", ModeratorRoute);
 
+app.use(express.static("../frontend/build/"))
+
 const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
+
+
