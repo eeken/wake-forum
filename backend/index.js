@@ -24,7 +24,7 @@ app.use("/comment", postCommentRoute);
 app.use("/moderator", ModeratorRoute);
 
 app.use(express.static("../frontend/build/"))
-app.get('*', (req, res) => {   res.sendFile(__dirname + '../frontend/build/index.html') })
+app.get('*', (req, res) => {   res.sendFile(__dirname -'/backend/' + '/frontend/build/index.html') })
 
 const PORT = process.env.PORT || 8000;
 
